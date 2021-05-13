@@ -1,0 +1,13 @@
+Olá!
+
+Para rodar esse código, siga os passos seguintes:
+
+DB_GHCERRUTI.sql
+Rode o código deste arquivo no SGBD MySQL;
+
+
+GHCerruti > Conexao > Conexao.cs
+
+Em "Conexao.cs", altere as informações de conexao do SGBD MySQL.
+
+
