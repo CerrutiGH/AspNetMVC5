@@ -1,0 +1,29 @@
+﻿@model IEnumerable<GHCerruti.Models.Funcionario>
+
+@{
+    ViewBag.Title = "Listar";
+    ViewBag.NameApp = "GHCerruti";
+}
+
+<h3>@ViewBag.Message</h3>
+
+
+@foreach (var item in Model)
+{
+<P>
+    <b>@Html.DisplayNameFor(model => model.codigo):</b> 
+    @Html.DisplayFor(modelItem => item.codigo)
+</P>
+
+<p>
+    <b>@Html.DisplayNameFor(model => model.nome): </b>
+            @Html.DisplayFor(modelItem => item.nome)
+</p>
+<p>
+    <b>Função do Funcionário: </b>
+            @Html.DisplayFor(modelItem => item.cargo)
+</p>
+<br />
+}
+
+<a href="~/Home/Index">Voltar</a>

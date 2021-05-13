@@ -1,0 +1,36 @@
+﻿@model IEnumerable<GHCerruti.Models.Usuario>
+@{
+    ViewBag.Title = "Resultado";
+    ViewBag.NameApp = "GHCerruti";
+}
+
+<h2>Listar Usuário</h2>
+
+@foreach (var item in Model)
+{
+   
+
+    <p>
+        <b>@Html.DisplayNameFor(model => model.nome): </b>
+        @Html.DisplayFor(modelItem => item.nome)
+    </p>
+    <p>
+        <b>@Html.DisplayNameFor(model => model.observacao): </b>
+        @Html.DisplayFor(modelItem => item.observacao)
+    </p>
+    <p>
+        <b>@Html.DisplayNameFor(model => model.datanascimento): </b>
+        @Html.DisplayFor(modelItem => item.datanascimento)
+    </p>
+    <p>
+        <b>@Html.DisplayNameFor(model => model.email): </b>
+        <a href""> @Html.DisplayFor(modelItem => item.email)</a>
+    </p>
+    <p>
+        <b>@Html.DisplayNameFor(model => model.login): </b>
+        @Html.DisplayFor(modelItem => item.login)
+    </p>
+    <br />
+}
+
+<a href="~/Home/Index">Voltar</a>
